@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Person Management System</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">
+                <i class="fas fa-users"></i>
+                Person Management System
+            </h1>
+            <div class="nav-links">
+                <a href="/person" class="nav-link">
+                    <i class="fas fa-list"></i> View All
+                </a>
+                <a href="/person/new" class="nav-link">
+                    <i class="fas fa-plus"></i> Add Person
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <%- body %>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Person Management System. Built with Node.js & MongoDB.</p>
+        </div>
+    </footer>
+</body>
+</html>

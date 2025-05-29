@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">
+                <i class="fas fa-users"></i>
+                Person Management System
+            </h1>
+            <div class="nav-links">
+                <a href="/person" class="nav-link">
+                    <i class="fas fa-list"></i> View All
+                </a>
+                <a href="/person/new" class="nav-link">
+                    <i class="fas fa-plus"></i> Add Person
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h2><i class="fas fa-users"></i> All Persons</h2>
+                <a href="/person/new" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add New Person
+                </a>
+            </div>
+
+            <% if (typeof message !== 'undefined' && message) { %>
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    <%= message %>
+                </div>
+            <% } %>
+
+            <% if (typeof error !== 'undefined' && error) { %>
+                <div class="alert alert-error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <div class="table-container">
+                <% if (persons && persons.length > 0) { %>
+                    <table class="persons-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Mobile Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% persons.forEach(person => { %>
+                                <tr>
+                                    <td><%= person.name %></td>
+                                    <td><%= person.age %></td>
+                                    <td><%= person.gender %></td>
+                                    <td><%= person.mobileNumber %></td>
+                                    <td class="actions">
+                                        <a href="/person/<%= person._id %>/edit" class="btn btn-small btn-secondary" title="Edit">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a href="/person/<%= person._id %>/delete" class="btn btn-small btn-danger" title="Delete">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <% }); %>
+                        </tbody>
+                    </table>
+                <% } else { %>
+                    <div class="empty-state">
+                        <i class="fas fa-users fa-3x"></i>
+                        <h3>No persons found</h3>
+                        <p>Start by adding your first person to the system.</p>
+                        <a href="/person/new" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add First Person
+                        </a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Person Management System. Built with Node.js & MongoDB.</p>
+        </div>
+    </footer>
+</body>
+</html>
