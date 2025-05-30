@@ -16,7 +16,7 @@ The service supports basic CRUD operations with well-structured endpoints and sc
 - **PUT /person/:id:** Update an existing person by ID
 - **DELETE /person/:id:** Delete a person by ID
 
-Each request is routed using **Express Router** and data is stored in **MongoDB** using **Mongoose ORM**.
+Each request is routed using **Express Router** and data is stored in **MongoDB**.
 
 ---
 
@@ -25,9 +25,8 @@ Each request is routed using **Express Router** and data is stored in **MongoDB*
 - **Backend Framework:** [Node.js](https://nodejs.org/)
 - **Routing & Middleware:** [Express.js](https://expressjs.com/)
 - **Database:** [MongoDB](https://www.mongodb.com/)
-- **ODM:** [Mongoose](https://mongoosejs.com/)
 - **Language:** JavaScript (ES6)
-- **API Tool (recommended):** Postman
+- **API Tool:** Postman
 
 ---
 
@@ -87,14 +86,10 @@ Deletes the specified person from the database.
 
 ## 🧬 Data Model
 The Person model contains the following fields:
-
-name (String, Required)
-
-age (Number, Required)
-
-gender (String: Male | Female | Other)
-
-mobile (String, Required, Unique)
+- name (String, Required)
+- age (Number, Required)
+- gender (String: Male | Female | Other)
+- mobile (String, Required, Unique)
 
 ---
 
@@ -135,7 +130,10 @@ npm install
 ```
 
 ### 3. Start MongoDB Server
-Make sure MongoDB is running locally or connect using an Atlas URI in .env.
+
+- Create a cluster on MongoDB Atlas
+- Get your connection string
+- Update the MONGODB_URI in .env file
 
 ### 4. Run the App locally
 
@@ -151,18 +149,23 @@ npm run dev
 
 ## 🔐 Environment Variables
 
+```bash
+
+
+PORT=3000
+MONGODB_URI=mongodb+srv://<db_username>:<db_password>@cluster0.qad17pa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster
+
+```
+
 ---
 
 ## 🙌 Acknowledgments
-Node.js
 
-Express
-
-MongoDB
-
-Mongoose
-
-Postman
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Postman
 
 ---
 
