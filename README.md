@@ -1,8 +1,5 @@
 # 🧾 Person API - RESTful Web Service
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
 A RESTful **Web Service built with Node.js, Express, and MongoDB** to manage people.  
 The service supports basic CRUD operations with well-structured endpoints and schema validation.
@@ -21,6 +18,13 @@ Each request is routed using **Express Router** and data is stored in **MongoDB*
 ---
 
 ## 🛠️ Tech Stack
+
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 
 - **Backend Framework:** [Node.js](https://nodejs.org/)
 - **Routing & Middleware:** [Express.js](https://expressjs.com/)
