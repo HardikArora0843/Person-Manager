@@ -1,5 +1,71 @@
 # 🧾 Person API - RESTful Web Service
 
+- List Of All Person
+
+![ListOfAllPerson](https://github.com/user-attachments/assets/23020b0c-e9a3-427c-8400-b6cd6c832141)
+
+---
+
+- Person Data In MongoDB
+
+![PersonDataInMongoDB](https://github.com/user-attachments/assets/4d63c77a-3c98-42e1-ac17-1902cbe2a6fd)
+
+---
+
+- Edit Person Age
+
+![EditPersonAge](https://github.com/user-attachments/assets/60fbf3d4-f938-44c2-8f1a-9a8b3ff0b09d)
+
+---
+
+- Person Age Edited In MongoDB
+
+![PersonAgeEditedInMongoDB](https://github.com/user-attachments/assets/ade95f49-40b8-417a-82ef-dd87e27d2196)
+
+---
+
+- Add New Person
+
+![AddNewPerson](https://github.com/user-attachments/assets/9728019d-12d0-4137-8c62-a61d795182e9)
+
+---
+
+- Person Added In MongoDB
+
+![PersonAddedInMongoDB](https://github.com/user-attachments/assets/27aad5a2-9a05-4a29-805d-57b65e0f4db0)
+
+---
+
+- Person Created Successfully
+
+![PersonCreated](https://github.com/user-attachments/assets/381b6569-fa36-422f-b6ae-e6601400dc46)
+
+
+---
+
+- Delete Person 
+
+![DeletePerson_1](https://github.com/user-attachments/assets/38a41911-63ba-4c36-8cbf-2ec7f126b9a7)
+
+
+
+![DeletePerson_2](https://github.com/user-attachments/assets/dfd0009a-1402-46d4-9db8-44906169b7f3)
+
+
+---
+
+- Person Deleted In MongoDB
+
+![PersonDeletedInMongoDB](https://github.com/user-attachments/assets/1e2f4435-023a-4191-b5ea-3c7330ddda2b)
+
+
+---
+
+- Person Deleted Successfully
+
+![PersonDeleted](https://github.com/user-attachments/assets/05d5e931-88ad-4785-b140-011f8b27a893)
+
+---
 
 A RESTful **Web Service built with Node.js, Express, and MongoDB** to manage people.  
 The service supports basic CRUD operations with well-structured endpoints and schema validation.
