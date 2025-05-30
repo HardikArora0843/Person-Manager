@@ -117,8 +117,8 @@ person-api/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/person-api.git
-cd person-api
+git clone https://github.com/HardikArora0843/Person-Manager.git
+cd Person-Manager
 
 ```
 
@@ -135,7 +135,21 @@ npm install
 - Get your connection string
 - Update the MONGODB_URI in .env file
 
-### 4. Run the App locally
+---
+
+### 4. Environment Variables
+
+```bash
+
+
+PORT=3000
+MONGODB_URI=mongodb+srv://<db_username>:<db_password>@cluster0.qad17pa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster
+
+```
+
+---
+
+### 5. Run the App locally
 
 ```bash
 
@@ -147,15 +161,7 @@ npm run dev
 
 ---
 
-## 🔐 Environment Variables
 
-```bash
-
-
-PORT=3000
-MONGODB_URI=mongodb+srv://<db_username>:<db_password>@cluster0.qad17pa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster
-
-```
 
 ---
 
