@@ -165,21 +165,50 @@ The Person model contains the following fields:
 
 ## 📦 Project Structure
 
-person-api/
+Person-Manager
+
+├── config/
+
+│   └── database.js
+
+├── controllers/
+
+│   └── personController.js
 
 ├── models/
 
-│   └── person.js         # Mongoose schema for Person
+│   └── Person.js
+
+├── public/
+
+│   └── styles.css
 
 ├── routes/
 
-│   └── personRoutes.js   # All REST endpoints
+│   └── personRoutes.js
 
-├── app.js                # Entry point & middleware setup
+├── views/
+
+│   ├── create.ejs
+
+│   ├── delete.ejs
+
+│   ├── edit.ejs
+
+│   ├── error.ejs
+
+│   ├── index.ejs
+
+│   └── layout.ejs
+
+├── .env
+
+├── package-lock.json
 
 ├── package.json
 
-└── README.md
+└── server.js
+
 
 
 ## 🚀 Getting Started
